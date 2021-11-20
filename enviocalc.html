@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style-->
+    <link rel="stylesheet" href="enviocalc.css">
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+    <title>Standar Aridos - Envios</title>
+</head>
+<body>
+    <div class="container">
+        <img  src="img/standarLogo.jpg" alt="logo-standar-aridos">
+        <h1>Envíos</h1>
+        <form class="form" action="https://formspree.io/f/mwkajgno"
+        method="POST">
+            <div class="form-container">
+                <div class="valores">
+                <p>SOLO EFECTIVO</p>
+                <p>Para poder hacer el envio, primero tenes que comprar el producto desde la web.</p>
+                </div>
+                
+                <h2 class="form-titulo">Elegí tu zona y producto comprado.</h2>
+                <h5 class="form-tituloAbajo">(Cada zona tiene su valor por Km de distancia a la fábrica).</h5>
+                <p>* Campo requerido</p>
+                <label for="zona">¿De qué zona sos? * </label>
+                <select class="zona" name="Zona" id="zona" required>
+                    <option class="opcion" value="Zona">$230 - Villa Tesei (1KM)</option>
+                    <option class="opcion" value="Zona">$370 - Tres Arrollos (3KM)</option>
+                    <option class="opcion" value="Zona">$440 - Hurlingham (4KM)</option>
+                    <option class="opcion" value="Zona">$510 - Morón (5KM)</option>
+                    <option class="opcion" value="Zona">$510 - Castelar (5KM)</option>
+                    <option class="opcion" value="Zona">$510 - Haedo (5KM)</option>
+                    <option class="opcion" value="Zona">$510 - El Palomar (5KM)</option>
+                    <option class="opcion" value="Zona">$580 - Ituzaingó (6KM)</option>
+                    <option class="opcion" value="Zona">$580 - Ciudad Jardin (6KM)</option>
+                    <option class="opcion" value="Zona">$580 - Martin Coronado (6KM)</option>
+                    <option class="opcion" value="Zona">$580 - Pablo Podestá (6KM)</option>
+                    <option class="opcion" value="Zona">$580 - William Morris (6KM)</option>
+                    <option class="opcion" value="Zona">$650 - Villa Luzuriaga (7KM)</option>
+                    <option class="opcion" value="Zona">$650 - Villa Sarmiento (7KM)</option>
+                    <option class="opcion" value="Zona">$650 - Loma Hermosa (7KM)</option>
+                    <option class="opcion" value="Zona">$650 - Villa Bosch (7KM)</option>
+                    <option class="opcion" value="Zona">$650 - Villa Udaondo (7KM)</option>
+                    <option class="opcion" value="Zona">$720 - 20 de Junio (8KM)</option>
+                    <option class="opcion" value="Zona">$720 - Churruca (8KM)</option>
+                    <option class="opcion" value="Zona">$720 - Once de Septiembre (8KM)</option>
+                    <option class="opcion" value="Zona">$720 - San Antonio de Padua (8KM)</option>
+                    <option class="opcion" value="Zona">$720 - Campo de Mayo (8KM)</option>
+                    <option class="opcion" value="Zona">$790 - Caseros (9KM)</option>
+                    <option class="opcion" value="Zona">$790 - El Libertador (9KM)</option>
+                    <option class="opcion" value="Zona">$790 - Billinghurst (9KM)</option>
+                    <option class="opcion" value="Zona">$790 - Bella Vista (9KM)</option>
+                    <option class="opcion" value="Zona">$860 - Tres de Febrero (10KM)</option>
+                    <option class="opcion" value="Zona">$860 - Ramos Mejía (10KM)</option>
+                    <option class="opcion" value="Zona">$860 - Ciudadela (10KM)</option>
+                    <option class="opcion" value="Zona">$860 - Villa Chacabuco (10KM)</option>
+                    <option class="opcion" value="Zona">$860 - Muñiz (10KM)</option>
+                    <option class="opcion" value="Zona">$930 - San Justo (11KM)</option>
+                    <option class="opcion" value="Zona">$930 - Rafael Castillo (11KM)</option>
+                    <option class="opcion" value="Zona">$930 - José Ingenieros (11KM)</option>
+                    <option class="opcion" value="Zona">$930 - Santos Lugares (11KM)</option>
+                    <option class="opcion" value="Zona">$930 - Merlo (11KM)</option>
+                    <option class="opcion" value="Zona">$930 - Libertad (11KM)</option>
+                    <option class="opcion" value="Zona">$930 - Villa Ballester (11KM)</option>
+                    <option class="opcion" value="Zona">$1000 - General San Martín (12KM)</option>
+                    <option class="opcion" value="Zona">$1000 - Isidro Casanova (12KM)</option>
+                    <option class="opcion" value="Zona">$1000 - Saenz Peña (12KM)</option>
+                    <option class="opcion" value="Zona">$1000 - Villa Raffo (12KM)</option>
+                    <option class="opcion" value="Zona">$1000 - José León Suarez (12KM)</option>
+                    <option class="opcion" value="Zona">$1000 - Villa Ayacucho (12KM)</option>
+                    <option class="opcion" value="Zona">$1000 - Villa Lynch (12KM)</option>
+                    <option class="opcion" value="Zona">$1000 - San Miguel (12KM)</option>
+                    <option class="opcion" value="Zona">$1000 - Versalles (12KM)</option>
+                    <option class="opcion" value="Zona">$1000 - Villa Real (12KM)</option>
+                    <option class="opcion" value="Zona">$1070 - La Tablada (13KM)</option>
+                    <option class="opcion" value="Zona">$1070 - Lomas del Mirador (13KM)</option>
+                    <option class="opcion" value="Zona">$1070 - Paso del Rey (13KM)</option>
+                    <option class="opcion" value="Zona">$1070 - San Andres (13KM)</option>
+                    <option class="opcion" value="Zona">$1070 - Liniers (13KM)</option>
+                    <option class="opcion" value="Zona">$1070 - Villa Devoto (13KM)</option>
+                    <option class="opcion" value="Zona">$1140 - Trujui (14KM)</option>
+                    <option class="opcion" value="Zona">$1140 - Villa Maipú (14KM)</option>
+                    <option class="opcion" value="Zona">$1140 - Carapachay (14KM)</option>
+                    <option class="opcion" value="Zona">$1140 - Monte Castro (14KM)</option>
+                    <option class="opcion" value="Zona">$1140 - Villa Luro (14KM)</option>
+                    <option class="opcion" value="Zona">$1210 - Parque San Martín (15KM)</option>
+                    <option class="opcion" value="Zona">$1210 - Santa Maria (15KM)</option>
+                    <option class="opcion" value="Zona">$1210 - Villa Marteli (15KM)</option>
+                    <option class="opcion" value="Zona">$1210 - Munro (15KM)</option>
+                    <option class="opcion" value="Zona">$1210 - Villa Adelina (15KM)</option>
+                    <option class="opcion" value="Zona">$1210 - Agronomía (15KM)</option>
+                    <option class="opcion" value="Zona">$1210 - Mataderos (15KM)</option>
+                    <option class="opcion" value="Zona">$1210 - Villa Pueyrredón (15KM)</option>
+                    <option class="opcion" value="Zona">$1210 - Vélez Sarfield (15KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Aldo Bonzi (16KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Ciudad Evita (16KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Villa Madero (16KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Don Torcuato (16KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Florida Oeste (16KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Ingeniero Adolfo Sourdeaux (16KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Floresta (16KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Parque Avellaneda (16KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Villa Urquiza (16KM)</option>
+                    <option class="opcion" value="Zona">$1280 - Villa del Parque (16KM)</option>
+                    <option class="opcion" value="Zona">$1350 - José c. Paz (17KM)</option>
+                    <option class="opcion" value="Zona">$1350- Moreno (17KM)</option>
+                    <option class="opcion" value="Zona">$1350 - Gregorio Laferrere (17KM)</option>
+                    <option class="opcion" value="Zona">$1350 - Pontevedra (17KM)</option>
+                    <option class="opcion" value="Zona">$1350 - Los Polvorines (17KM)</option>
+                    <option class="opcion" value="Zona">$1350 - Villa de Mayo (17KM)</option>
+                    <option class="opcion" value="Zona">$1350 - Parque Chas (17KM)</option>
+                    <option class="opcion" value="Zona">$1350 - Saavedra (17KM)</option>
+                    <option class="opcion" value="Zona">$1350 - Villa Lugano (17KM)</option>
+                    <option class="opcion" value="Zona">$1350 - Villa Santa Rita (17KM)</option>
+                    <option class="opcion" value="Zona">$1420 - Gonzalez Catán (18KM)</option>
+                    <option class="opcion" value="Zona">$1420 - Tapiales (18KM)</option>
+                    <option class="opcion" value="Zona">$1420 - El Talar (18KM)</option>
+                    <option class="opcion" value="Zona">$1420 - Florida (18KM)</option>
+                    <option class="opcion" value="Zona">$1420 - Flores (18KM)</option>
+                    <option class="opcion" value="Zona">$1420 - La Paternal (18KM)</option>
+                    <option class="opcion" value="Zona">$1420 - Villa General Mitre (18KM)</option>
+                    <option class="opcion" value="Zona">$1420 - Villa Ortúzar (18KM)</option>
+                    <option class="opcion" value="Zona">$1490 - Mariano Acosta (19KM)</option>
+                    <option class="opcion" value="Zona">$1490 - Villa Celina (19KM)</option>
+                    <option class="opcion" value="Zona">$1490 - Olivos (19KM)</option>
+                    <option class="opcion" value="Zona">$1490 - Grand Bourg (19KM)</option>
+                    <option class="opcion" value="Zona">$1490 - Coghlan (19KM)</option>
+                    <option class="opcion" value="Zona">$1490 - Villa Riachuelo (19KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Malvinas Argentinas (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Vicente López (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - La Reja (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - La Lucila (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Pablo Nogues (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Tortuguitas (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Tierras Altas (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Belgrano (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Caballito (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Chacarita (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Villa Crespo (20KM)</option>
+                    <option class="opcion" value="Zona">$1560 - Villa Soldati (20KM)</option>
+                    <option class="opcion" value="Zona">$1630 - Victoria (21KM)</option>
+                    <option class="opcion" value="Zona">$1630 - Virreyes (21KM)</option>
+                    <option class="opcion" value="Zona">$1630 - General Pacheco (21KM)</option>
+                    <option class="opcion" value="Zona">$1630 - Ricardo Rojas (21KM)</option>
+                    <option class="opcion" value="Zona">$1630 - Colegiales (21KM)</option>
+                    <option class="opcion" value="Zona">$1630 - Nuñez (21KM)</option>
+                    <option class="opcion" value="Zona">$1630 - Parque Chacabuco (21KM)</option>
+                    <option class="opcion" value="Zona">$1700 - La Matanza (22KM)</option>
+                    <option class="opcion" value="Zona">$1700 - San Isidro (22KM)</option>
+                    <option class="opcion" value="Zona">$1700 - Cuartel V (22KM)</option>
+                    <option class="opcion" value="Zona">$1700 - Almagro (22KM)</option>
+                    <option class="opcion" value="Zona">$1700 - Boedo (22KM)</option>
+                    <option class="opcion" value="Zona">$1700 - Nueva Pompeya (22KM)</option>
+                    <option class="opcion" value="Zona">$1770 - San Fernando (23KM)</option>
+                    <option class="opcion" value="Zona">$1770 - Francisco Alvarez (23KM)</option>
+                    <option class="opcion" value="Zona">$1770 - Ingeniero Budge (23KM)</option>
+                    <option class="opcion" value="Zona">$1770 - Balvanera (23KM)</option>
+                    <option class="opcion" value="Zona">$1770 - Palermo (23KM)</option>
+                    <option class="opcion" value="Zona">$1840 - Villa Fiorito (24KM)</option>
+                    <option class="opcion" value="Zona">$1840 - Villa Albertina (24KM)</option>
+                    <option class="opcion" value="Zona">$1840 - Parque Patricios (24KM)</option>
+                    <option class="opcion" value="Zona">$1840 - San Cristobal (24KM)</option>
+                    <option class="opcion" value="Zona">$1910 - Presidente Derqui (25KM)</option>
+                    <option class="opcion" value="Zona">$1910 - Constitución (25KM)</option>
+                    <option class="opcion" value="Zona">$1910 - Monserrat (25KM)</option>
+                    <option class="opcion" value="Zona">$1980 - Del Viso (26KM)</option>
+                    <option class="opcion" value="Zona">$1980 - Villa Centenario (26KM)</option>
+                    <option class="opcion" value="Zona">$1980 - Recoleta (26KM)</option>
+                    <option class="opcion" value="Zona">$1980 - San Nicolas (26KM)</option>
+                    <option class="opcion" value="Zona">$1980 - San Telmo (26KM)</option>
+                    <option class="opcion" value="Zona">$2050 - Lomas de Zamora (27KM)</option>
+                    <option class="opcion" value="Zona">$2050 - Marcos Paz (27KM)</option>
+                    <option class="opcion" value="Zona">$2050 - Piñeyro (27KM)</option>
+                    <option class="opcion" value="Zona">$2050 - Benavidez (27KM)</option>
+                    <option class="opcion" value="Zona">$2050 - Rincon de Milberg (27KM)</option>
+                    <option class="opcion" value="Zona">$2050 - Barracas (27KM)</option>
+                    <option class="opcion" value="Zona">$2050 - Puerto Madero (27KM)</option>
+                    <option class="opcion" value="Zona">$2120 - Lanús (28KM)</option>
+                    <option class="opcion" value="Zona">$2120 - Elías Romero (28KM)</option>
+                    <option class="opcion" value="Zona">$2120 - Luis Guillón (28KM)</option>
+                    <option class="opcion" value="Zona">$2120 - Nordelta (28KM)</option>
+                    <option class="opcion" value="Zona">$2120 - La Lonja (28KM)</option>
+                    <option class="opcion" value="Zona">$2120 - La Boca (28KM)</option>
+                    <option class="opcion" value="Zona">$2120 - Retiro (28KM)</option>
+                    <option class="opcion" value="Zona">$2190 - Virrey del Pino(29KM)</option>
+                    <option class="opcion" value="Zona">$2190 - Remedios de Escalada (29KM)</option>
+                    <option class="opcion" value="Zona">$2190 - Villa Astolfi (29KM)</option>
+                    <option class="opcion" value="Zona">$2190 - Lavallol (29KM)</option>
+                    <option class="opcion" value="Zona">$2190 - Valentin Alsina (29KM)</option>
+                    <option class="opcion" value="Zona">$2260 - Tigre (30KM)</option>
+                    <option class="opcion" value="Zona">$2260 - Dock Sud (30KM)</option>
+                    <option class="opcion" value="Zona">$2260 - Gerli (30KM)</option>
+                    <option class="opcion" value="Zona">$2260 - Crucecita (30KM)</option>
+                    <option class="opcion" value="Zona">$2260 - Banfield (30KM)</option>
+
+                    
+
+                </select>
+                <label for="producto">Producto Comprado: * </label>
+                <select class="producto" name="producto" id="producto"  required>
+                    <option class="opcion" value="producto">Enduido Plástico Interior</option>
+                    <option class="opcion" value="producto">Enduido Plástico Exterior</option>
+                    <option class="opcion" value="producto">Látex Interior</option>
+                    <option class="opcion" value="producto">Látex Exterior</option>
+                    <option class="opcion" value="producto">Fijador - Sellador</option>
+                    <option class="opcion" value="producto">Membrana "Blanca"</option>
+                    <option class="opcion" value="producto">Membrana "Roja"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Gris Sonora"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Gris Perlado"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Rojo Teja"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Blanco Tiza"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Amarillo Claro"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Coral"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Chocolate"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Sombra Negra"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Egeo"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Verde Egipcio"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Beige"</option>
+                    <option class="opcion" value="producto">Revestimiento Texturado "Silueta"</option>
+                    <option class="opcion" value="producto">Revestimiento Intenso "Rojo Karoline"</option>
+                    <option class="opcion" value="producto">Revestimiento Intenso "Turquesa"</option>
+                    <option class="opcion" value="producto">Revestimiento Intenso "Azul Francia"</option>
+                    <option class="opcion" value="producto">Revestimiento Intenso "Amarillo Martini"</option>
+                    <option class="opcion" value="producto">Revestimiento Intenso "Naranja Marengo"</option>
+                    <option class="opcion" value="producto">Revestimiento Intenso "Naranja Mandarine"</option>
+                    <option class="opcion" value="producto">Látex Color "Verde Manzana"</option>
+                    <option class="opcion" value="producto">Látex Color "Violeta"</option>
+                    <option class="opcion" value="producto">Látex Color "Naranja"</option>
+                    <option class="opcion" value="producto">Látex Color "Magenta"</option>
+                    <option class="opcion" value="producto">Látex Color "Coral"</option>
+                    <option class="opcion" value="producto">Látex Color "Turquesa"</option>
+                    <option class="opcion" value="producto">Látex Color "Beige"</option>
+                    <option class="opcion" value="producto">Látex Color "Lila"</option>
+                    <option class="opcion" value="producto">Látex Color "Gris Topo"</option>
+                    <option class="opcion" value="producto">Látex Color "Rosa"</option>
+                    <option class="opcion" value="producto">Látex Color "Azul Petróleo"</option>
+                    <option class="opcion" value="producto">Látex Color "Salmón Rosado"</option>
+                    <option class="opcion" value="producto">Látex Color "Azul Capri"</option>
+                    <option class="opcion" value="producto">Látex Color "Amarillo Limón"</option>
+                    <option class="opcion" value="producto">Látex Color "Gris Perlado"</option>
+                    <option class="opcion" value="producto">Látex Color "Azul Maya"</option>
+                    <option class="opcion" value="producto">Auxiliares "Rodillo pelo largo"</option>
+                    <option class="opcion" value="producto">Auxiliares "Rodillo pelo corto"</option>
+                    <option class="opcion" value="producto">Auxiliares "Llana"</option>
+                    <option class="opcion" value="producto">Auxiliares "Base"</option>
+                    
+                    
+                    
+                </select>
+                <h2 class="form-tituloDos">Completa tus datos.</h2>
+                <input class="nombre" type="text" placeholder="Nombre: *"  required>
+                <input class="localidad" type="text" placeholder="Localidad: *"  required>
+                
+                <input class="direccion" type="text" placeholder="Dirección: *"  required>
+                <div class="numeroycasa">
+                <input class="numeracion" type="text" placeholder="Numeración: *"  required>
+                <input class="casa" type="text" placeholder="Casa/Dpto: *"  required>
+                </div>
+                <input class="numcontacto" type="text" placeholder="Número de contacto: 011 *"  required>
+                <textarea class="textarea" name="textarea" id="textarea" cols="30" rows="10" placeholder="Aclaraciones de dirección y/o entre calles:"></textarea>
+                
+                <div class="botonPagar">
+                    
+                    <p>Mande el mensaje para que nosotros coordinemos la entrega con usted.</p>
+                </div>
+
+                <input type="submit" value="Enviar" class="form-cta">
+
+                <button class="volver"><a href="index.html">VOLVER</a></button>
+            </div>  
+        </form>
+        <i id="copy" class="far fa-copyright">Copyrigth - 2021 - Standar Aridos - Creado por Lucas Cencig</i>
+</body>
+
+</html>

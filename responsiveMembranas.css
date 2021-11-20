@@ -1,0 +1,1123 @@
+:root{
+    --colorVioleta: #9810B3;
+    --colorNegro: #09010B;
+    --colorBlanco: #F9F9F9;
+    --colorRojo: #BB1818;
+
+    --fuenteMenu: 'Montserrat', sans-serif;
+    --fuenteBotones: 'Staatliches', cursive;
+    --fuenteLetras: 'Roboto', sans-serif; 
+    --fuenteTitPrincipal: 'Saira', sans-serif;
+}
+
+
+
+@media screen and (max-width: 1280px){
+
+}
+
+@media screen and (max-width: 970px) {
+    header{
+        width: 100%;
+        height: 10rem;
+        padding: 5px;
+        background-image: linear-gradient(180deg, var(--colorVioleta), var(--colorNegro) );
+        border-bottom: solid 1px silver;
+        margin-bottom: 20px;
+      
+    }
+    .logo{
+        position: absolute;
+        margin-top: 10px;
+        width: 200px;
+        height: 50px;
+        float:left;
+        border-radius: 50px;
+        box-shadow: rgb(0, 0, 0) 2px 2px 0px 0px;
+    }
+    .icono-menu{
+        display: none;
+    }
+/*MENU*/
+
+#menu{
+    width: 100%;
+}
+.logo-menu{
+    display: none;
+}
+ul{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center; 
+}
+li{
+    list-style: none;
+    margin-top: 10px;
+}
+li ul{
+    text-align: center;
+}
+#menu a{
+    font-family: var(--fuenteMenu);
+    color: var(--colorBlanco);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+#menu ul li a:hover{
+    color: #BB1818;
+    transition: all 0.6s ease;
+    text-decoration: underline;
+}
+#menu ul li ul a{
+    display: none;
+    transition: all 0.6s ease-in;
+}
+#menu ul li ul{
+    display: flex;
+    margin: auto;
+    position: absolute;
+    width: 300px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+    font-family: var(--fuenteMenu); 
+}
+#menu li:hover > ul {
+    margin-top: 0px;
+    display: block;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+#menu li:hover > ul a{
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-size: 15px; 
+    padding: 10px 10px 0px 10px ;
+    transition: all 0.6s ease-in;
+    font-family: var(--fuenteMenu);
+    font-weight: 500;
+    border-bottom: solid grey 2px;
+}
+.buscar{
+    
+    width: 600px;
+
+}
+.iconoMenu{
+    display: none;
+   
+}
+/*CONTENIDO*/
+
+#contenido{
+    display: block;
+    width: 90%;
+}
+.contenidoMembranas{
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+ h1{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.contenidoMembranas .bannerMem{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 800px;
+    height: 400px;
+}
+
+
+
+#tarjetas{
+    margin-top: 60px;
+}
+#tarjetas .tituloTarjetas{
+        font-family: var(--fuenteBotones);
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: var(--colorRojo);
+}
+#tarjetas .contenedorTarjetas{
+    width: 100%;
+    max-width: 970px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3,0fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#tarjetas .contenedorTarjetas .tarjeta{
+    width: 200px;
+    height: 330px;
+    border-top: solid var(--colorBordes) 2px;
+    border-left: solid var(--colorBordes) 2px;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: var(--colorBlanco) 5px 5px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+#tarjetas .contenedorTarjetas .tarjeta img{
+    display: flex;
+    margin:auto;
+    width: 230px;
+    height: 160px;
+}
+#tarjetas .contenedorTarjetas .tarjeta h4{
+    font-family: var(--fuenteLetras);
+    color: var(--colorRojo);
+    font-size: 18px;
+    font-weight: 900;
+}
+#tarjetas .contenedorTarjetas .tarjeta a{
+    font-weight: 800;
+    text-decoration: none;
+    font-family: var(--colorNegro);
+    font-size: 15px;
+    color: var(--colorRojo);
+    border: solid 1px black;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+    transition: all 0.6s ease;
+
+}
+.tarjeta a:hover{
+    color: var(--colorVioleta);
+    transition: all 0.6s ease;
+}
+#tarjeta .tarjeta a:hover{
+    color: var(--colorVioleta);
+    transition: all 0.6s ease;
+}
+#tarjetas .aclaracion{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+footer{
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    margin-top: 50px;
+}
+.foot{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.foot .footUno h3{
+    font-size: 20px;
+}
+.foot .footDos h3{
+    font-size: 20px;
+}
+.foot .footTres h3{
+    font-size: 20px;
+}
+.foot .footUno a{
+    font-size: 18px;
+}
+.foot .footUno .iconowsp{
+    font-size: 20px;
+}
+.foot .footUno .iconomsj{
+    font-size: 20px;
+}
+.foot .footTres .iconofb{
+    font-size: 20px;
+}
+.foot .footTres .iconoig{
+    font-size: 20px;
+}
+#copy{
+    color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+}
+}
+
+@media screen and (max-width: 767px) {
+    header{
+        width: 100%;
+        height: 10rem;
+        padding: 5px;
+        background-image: linear-gradient(180deg, var(--colorVioleta), var(--colorNegro) );
+        border-bottom: solid 1px silver;
+        margin-bottom: 20px;
+      
+    }
+    .logo{
+        position: absolute;
+        margin-top: 10px;
+        width: 150px;
+        height: 40px;
+        float:left;
+        border-radius: 50px;
+        box-shadow: rgb(0, 0, 0) 2px 2px 0px 0px;
+    }
+    .iconoMenu{
+        display: none;
+    }
+/*MENU*/
+
+#menu{
+    width: 100%;
+    display: inline;
+}
+.logo-menu{
+    display: none;
+}
+#menu ul{
+    display: block;
+    margin: auto;
+    justify-content: center;
+    text-align: center; 
+}
+#menu li{
+    list-style: none;
+    margin-top: 10px;
+}
+#menu li ul{
+    text-align: center;
+}
+#menu a{
+    font-family: var(--fuenteMenu);
+    color: var(--colorBlanco);
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+#menu ul li a:hover{
+    color: #BB1818;
+    transition: all 0.6s ease;
+    text-decoration: underline;
+}
+#menu ul li ul a{
+    display: none;
+    transition: all 0.6s ease-in;
+}
+#menu ul li ul{
+    display: block;
+    margin: auto;
+    position: absolute;
+    width: 300px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+    font-family: var(--fuenteMenu); 
+}
+#menu li:hover > ul {
+    margin-top: 0px;
+    display: block;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    z-index: 10;
+    margin-left: 30%;
+}
+#menu li:hover > ul a{
+    width: 180px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-size: 15px; 
+    padding: 10px 5px 10px 10px ;
+    transition: all 0.6s ease-in;
+    font-family: var(--fuenteMenu);
+    font-weight: 500;
+    border-bottom: solid grey 2px;
+}
+.buscar{
+    
+    width: 600px;
+
+}
+.iconoMenu{
+    display: none;
+   
+}
+.cont-menu h1{
+    display: none;
+}
+
+
+/*CONTENIDO*/
+
+#contenido{
+    display: block;
+    width: 100%;
+}
+.contenidoMembranas{
+    margin:auto;
+}
+h1{
+    text-align: center;
+    font-family: var(--fuenteBotones);
+}
+.contenidoMembranas .bannerMem{
+    display: flex;
+    margin:auto;
+    width: 600px;
+    height: 350px;
+    border: solid 2px black;
+    
+}
+.contenidoMembranas h3{
+    width: 60%;
+}
+.contenidoMembranas h3{
+    width: 60%;
+}
+
+#tarjetas{
+    margin-top: 60px;
+    
+}
+#tarjetas .tituloTarjetas{
+        font-family: var(--fuenteBotones);
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: var(--colorRojo);
+}
+#tarjetas .contenedorTarjetas{
+    width: 100%;
+    max-width: 767px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2,0fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#tarjetas .contenedorTarjetas .tarjeta{
+    width: 200px;
+    height: 330px;
+    border-top: solid var(--colorBordes) 2px;
+    border-left: solid var(--colorBordes) 2px;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: var(--colorBlanco) 5px 5px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+#tarjetas .contenedorTarjetas .tarjeta img{
+    width: 190px;
+    height: 140px;
+}
+#tarjetas .contenedorTarjetas .tarjeta h4{
+    font-family: var(--fuenteLetras);
+    color: var(--colorRojo);
+    font-size: 18px;
+    font-weight: 900;
+}
+#tarjetas .contenedorTarjetas .tarjeta a{
+    font-weight: 800;
+    text-decoration: none;
+    font-family: var(--colorNegro);
+    font-size: 15px;
+    color: var(--colorRojo);
+    border: solid 1px black;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+    transition: all 0.6s ease;
+
+}
+.tarjeta a:hover{
+    color: var(--colorVioleta);
+    transition: all 0.6s ease;
+}
+#tarjeta .tarjeta a:hover{
+    color: var(--colorVioleta);
+    transition: all 0.6s ease;
+}
+#tarjetas .aclaracion{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+footer{
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    margin-top: 50px;
+}
+.foot{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.foot .footUno h3{
+    font-size: 18px;
+}
+.foot .footDos h3{
+    font-size: 18px;
+}
+.foot .footTres h3{
+    font-size: 18px;
+}
+.foot .footUno a{
+    font-size: 16px;
+}
+.foot .footUno .iconowsp{
+    font-size: 18px;
+}
+.foot .footUno .iconomsj{
+    font-size: 18px;
+}
+.foot .footTres .iconofb{
+    font-size: 18px;
+}
+.foot .footTres .iconoig{
+    font-size: 18px;
+}
+#copy{
+    color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    padding: 20px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        width: 100%;
+    }
+    .logo{
+        width: 150px;
+        height: 40px;
+    }
+     /*MENU*/
+    
+     .icono-menu{
+        display: block;
+        z-index: 100000;
+        position: relative;;       
+    }
+    .iconoMenu{
+        display: block;
+        z-index: 100000;
+        position: relative;
+    }
+    .iconoMenu img{
+        width: 30px;
+        float: right;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+.logo-menu{
+    display: block;
+    
+}
+
+#menu{
+    display: block;
+    text-align: center;
+    width: 100%;
+    
+  }
+  #menu li{
+    display: block;
+    padding: 10px 0px;
+  }
+  #menu a{
+    font-family: var(--fuenteMenu);
+    color: var(--colorBlanco);
+    font-size: 15px;
+    text-decoration: none;
+    padding: 20px 60px;
+    margin-left: -50px;
+    
+}
+#menu li:hover > ul {
+    margin: auto;
+    width: 300px;
+    background: rgba(24, 24, 24, 0.959);
+    display: block;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+    font-weight: 800;
+    z-index: 10;
+}
+#menu li:hover > ul a{
+    
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 15px; 
+    border-bottom: solid 2px gray;
+    border-width: 1px;
+    padding: 10px 0px 10px 0px ;
+    transition: all 0.6s ease-in;
+    
+}
+
+#menu img{
+    display: block;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 200px;
+    border-radius: 50px;
+    
+}
+.cont-menu{
+    background-color: #7a7a7a9c;
+    backdrop-filter: blur(7px);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 0px 15px #09010b88;
+    width: 100%;
+    height: 138vh;
+    padding-top: 50px 0px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    z-index: 1000;
+    transform: translateY(-150vh);
+}
+.cont-menu h1{
+    display: block;
+    text-align: center;
+    color: var(--colorNegro);
+    font-family: var(--fuenteBotones);
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+
+.cont-menu ul{
+    display: block;
+    padding-top: 50px;
+    list-style: none;
+    text-align: left;
+}
+#menu li:hover > ul a{
+    
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 15px; 
+    border-bottom: solid 2px rgb(128, 128, 128);
+    border-width: 1px;
+    padding: 10px 0px 10px 0px ;
+    transition: all 0.6s ease-in;
+    
+}
+.cont-menu ul li{
+    margin: auto;
+    color: #09010B;
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    
+}
+.cont-menu ul li a{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    padding: 30px 0px;
+    cursor: pointer;
+    color: #09010B;
+    font-weight:500 ;
+}
+.cont-menu ul li a:hover{
+    border-bottom: solid 2px #09010B;
+    color: #09010B;
+}
+.active{
+    transform: translateY(0);
+}
+
+   /*CONTENIDO*/
+
+   #contenido{
+    display: block;
+    width: 100%;
+}
+.contenidoMembranas{
+    margin:auto;
+}
+h1{
+    text-align: center;
+    font-family: var(--fuenteBotones);
+}
+.contenidoMembranas .bannerMem{
+    display: flex;
+    margin:auto;
+    width: 400px;
+    height: 250px;
+    border: solid 2px black;
+    
+}
+.contenidoMembranas h3{
+    width: 50%;
+
+}
+#tarjetas{
+    margin-top: 60px;
+}
+#tarjetas .tituloTarjetas{
+        font-family: var(--fuenteBotones);
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: var(--colorRojo);
+}
+#tarjetas .contenedorTarjetas{
+    width: 100%;
+    max-width: 600px;
+    height: 390px;
+    display: grid;
+    grid-template-columns: repeat(2,0fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#tarjetas .contenedorTarjetas .tarjeta{
+    width: 150px;
+    height: 300px;
+    border-top: solid var(--colorBordes) 2px;
+    border-left: solid var(--colorBordes) 2px;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: var(--colorBlanco) 5px 5px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+#tarjetas .contenedorTarjetas .tarjeta img{
+    width: 150px;
+    height: 100px;
+}
+#tarjetas .contenedorTarjetas .tarjeta h4{
+    font-family: var(--fuenteLetras);
+    color: var(--colorRojo);
+    font-size: 18px;
+    font-weight: 900;
+}
+#tarjetas .contenedorTarjetas .tarjeta a{
+    font-weight: 800;
+    text-decoration: none;
+    font-family: var(--colorNegro);
+    font-size: 15px;
+    color: var(--colorRojo);
+    border: solid 1px black;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+    transition: all 0.6s ease;
+
+}
+.tarjeta a:hover{
+    color: var(--colorVioleta);
+    transition: all 0.6s ease;
+}
+#tarjeta .tarjeta a:hover{
+    color: var(--colorVioleta);
+    transition: all 0.6s ease;
+}
+#tarjetas .aclaracion{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: var(--fuenteLetras);
+    color: var(--colorVioleta);
+}
+footer{
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    margin-top: 50px;
+}
+.foot{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.foot .footUno h3{
+    font-size: 12px;
+}
+.foot .footDos h3{
+    font-size: 12px;
+}
+.foot .footTres h3{
+    font-size: 12px;
+}
+.foot .footUno a{
+    font-size: 10px;
+}
+.foot .footUno .iconowsp{
+    font-size: 12px;
+}
+.foot .footUno .iconomsj{
+    font-size: 12px;
+}
+.foot .footDos h3{
+    font-size: 12px;
+}
+.foot .footDos a{
+    font-size: 10px;
+}
+.foot .footTres .iconofb{
+    font-size: 12px;
+}
+.foot .footTres .iconoig{
+    font-size: 12px;
+}
+footer .direc{
+    margin-top: 15px;
+}
+#copy{
+    color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        width: 100%;
+    }
+    .logo{
+        width: 150px;
+        height: 40px;
+    }
+     /*MENU*/
+    
+     .icono-menu{
+        display: block;
+        z-index: 100000;
+        position: relative;;       
+    }
+    .iconoMenu{
+        display: block;
+        z-index: 100000;
+        position: relative;
+    }
+    .iconoMenu img{
+        width: 30px;
+        float: right;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+.logo-menu{
+    display: block;
+    
+}
+
+#menu{
+    display: block;
+    text-align: center;
+    width: 100%;
+    
+  }
+  #menu li{
+    display: block;
+    padding: 10px 0px;
+  }
+  #menu a{
+    font-family: var(--fuenteMenu);
+    color: var(--colorBlanco);
+    font-size: 15px;
+    text-decoration: none;
+    padding: 20px 60px;
+    margin-left: -50px;
+    
+}
+#menu li:hover > ul {
+    margin: auto;
+    width: 300px;
+    background: rgba(24, 24, 24, 0.959);
+    display: block;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+    font-weight: 800;
+    z-index: 10;
+}
+#menu li:hover > ul a{
+    
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 15px; 
+    border-bottom: solid 2px gray;
+    border-width: 1px;
+    padding: 10px 0px 10px 0px ;
+    transition: all 0.6s ease-in;
+    
+}
+
+#menu img{
+    display: block;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 200px;
+    border-radius: 50px;
+    
+}
+.cont-menu{
+    background-color: #7a7a7a9c;
+    backdrop-filter: blur(7px);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 0px 15px #09010b88;
+    width: 100%;
+    height: 138vh;
+    padding-top: 50px 0px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    z-index: 1000;
+    transform: translateY(-150vh);
+}
+.cont-menu h1{
+    display: block;
+    text-align: center;
+    color: var(--colorNegro);
+    font-family: var(--fuenteBotones);
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+
+.cont-menu ul{
+    display: block;
+    padding-top: 50px;
+    list-style: none;
+    text-align: left;
+}
+#menu li:hover > ul a{
+    
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 15px; 
+    border-bottom: solid 2px rgb(128, 128, 128);
+    border-width: 1px;
+    padding: 10px 0px 10px 0px ;
+    transition: all 0.6s ease-in;
+    
+}
+.cont-menu ul li{
+    margin: auto;
+    color: #09010B;
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    
+}
+.cont-menu ul li a{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    padding: 30px 0px;
+    cursor: pointer;
+    color: #09010B;
+    font-weight:500 ;
+}
+.cont-menu ul li a:hover{
+    border-bottom: solid 2px #09010B;
+    color: #09010B;
+}
+.active{
+    transform: translateY(0);
+}
+
+   /*CONTENIDO*/
+
+   #contenido{
+    display: block;
+    width: 100%;
+}
+.contenidoMembranas{
+    margin:auto;
+}
+h1{
+    text-align: center;
+    font-family: var(--fuenteBotones);
+}
+.contenidoMembranas .bannerMem{
+    display: flex;
+    margin:auto;
+    width: 300px;
+    height: 150px;
+    border: solid 2px black;
+    
+}
+.contenidoMembranas h3{
+    width: 50%;
+
+}
+#tarjetas{
+    margin-top: 60px;
+}
+#tarjetas .tituloTarjetas{
+        font-family: var(--fuenteBotones);
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: var(--colorRojo);
+}
+#tarjetas .contenedorTarjetas{
+    width: 100%;
+    max-width: 600px;
+    height: 390px;
+    display: grid;
+    grid-template-columns: repeat(2,0fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#tarjetas .contenedorTarjetas .tarjeta{
+    width: 110px;
+    height: 300px;
+    border-top: solid var(--colorBordes) 2px;
+    border-left: solid var(--colorBordes) 2px;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: var(--colorBlanco) 5px 5px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+#tarjetas .contenedorTarjetas .tarjeta img{
+    width: 110px;
+    height: 80px;
+}
+#tarjetas .contenedorTarjetas .tarjeta h4{
+    font-family: var(--fuenteLetras);
+    color: var(--colorRojo);
+    font-size: 18px;
+    font-weight: 900;
+}
+#tarjetas .contenedorTarjetas .tarjeta a{
+    font-weight: 800;
+    text-decoration: none;
+    font-family: var(--colorNegro);
+    font-size: 12px;
+    color: var(--colorRojo);
+    border: solid 1px black;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+    transition: all 0.6s ease;
+
+}
+.tarjeta a:hover{
+    color: var(--colorVioleta);
+    transition: all 0.6s ease;
+}
+#tarjeta .tarjeta a:hover{
+    color: var(--colorVioleta);
+    transition: all 0.6s ease;
+}
+#tarjetas .aclaracion{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: var(--fuenteLetras);
+    color: var(--colorVioleta);
+}
+footer{
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    margin-top: 50px;
+}
+.foot{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.foot .footUno h3{
+    font-size: 12px;
+}
+.foot .footDos h3{
+    font-size: 12px;
+}
+.foot .footTres h3{
+    font-size: 12px;
+}
+.foot .footUno a{
+    font-size: 10px;
+}
+.foot .footUno .iconowsp{
+    font-size: 12px;
+}
+.foot .footUno .iconomsj{
+    font-size: 12px;
+}
+.foot .footTres .iconofb{
+    font-size: 12px;
+}
+.foot .footTres .iconoig{
+    font-size: 12px;
+}
+footer .direc{
+    font-size: 10px;
+    margin-top: 20px;
+}
+#copy{
+    color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    padding: 20px;
+}
+}

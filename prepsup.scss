@@ -1,0 +1,956 @@
+*{
+    
+   
+    
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+:root{
+    --colorVioleta: #9810B3;
+    --colorNegro: #09010B;
+    --colorBlanco: #F9F9F9;
+    --colorRojo: #BB1818;
+
+    --fuenteMenu: 'Montserrat', sans-serif;
+    --fuenteBotones: 'Staatliches', cursive;
+    --fuenteLetras: 'Roboto', sans-serif; 
+    --fuenteTitPrincipal: 'Saira', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 10rem;
+    padding: 5px;
+    background-image: linear-gradient(180deg, var(--colorVioleta), var(--colorNegro) );
+    border-bottom: solid 1px silver;
+    margin-bottom: 20px;
+  
+}
+.logo{
+    position: absolute;
+    margin-top: 10px;
+    width: 300px;
+    height: 85px;
+    float:left;
+    border-radius: 50px;
+    box-shadow: rgb(0, 0, 0) 2px 2px 0px 0px;
+}
+.icono-menu{
+    display: none;
+}
+
+/*MENU*/
+.iconoMenu{
+    display: none;
+}
+#menu{
+    width: 100%;
+
+    .logo-menu{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    li{
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    li ul{
+        text-align: center;
+    }
+    
+}
+#menu a{
+    font-family: var(--fuenteMenu);
+    color: var(--colorBlanco);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+#menu ul li a:hover{
+    color: #BB1818;
+    transition: all 0.6s ease;
+    text-decoration: underline;
+}
+#menu ul li ul a{
+    display: none;
+    transition: all 0.6s ease-in;
+    
+}
+#menu ul li ul{
+    display: flex;
+    margin: auto;
+    position: absolute;
+    width: 300px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+    font-family: var(--fuenteMenu); 
+}
+#menu li:hover > ul {
+    margin-top: 10px;
+    display: block;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+#menu li:hover > ul a{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-size: 18px; 
+    padding: 10px 10px 0px 10px ;
+    transition: all 0.6s ease-in;
+    font-family: var(--fuenteMenu);
+    font-weight: 500;
+    border-bottom: solid grey 2px;
+    
+}
+.cont-menu h1{
+    display: none;
+}
+
+
+/*CONTENIDO*/
+
+#contenido{
+    display: block;
+    width: 100%;
+
+    .aclaracion{
+        text-align: center;
+        margin-top: 10vh;
+        font-size: 25px;
+        font-weight: 800;
+        font-family: var(--fuenteLetras);
+        color: var(--colorVioleta);
+    }
+    .botonContacto{
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(69, 141, 27);
+        transition: all 0.2s ease;
+        border: solid green 3px;
+    }
+    .botonContacto a{
+        color: var(--colorBlanco);
+        font-size: 30px;
+    }
+    .botonContacto:hover{
+        background-color: rgb(100, 202, 41);
+        transition: all 0.2s ease;
+    }
+}
+
+.contenidoprepsup{
+    margin:auto;
+    
+
+    h1{
+        text-align: center;
+        font-family: var(--fuenteBotones);
+    }
+   
+
+    h3{
+        margin-top: 35px;
+        text-align: center;
+        font-family: var(--fuenteBotones);
+        font-size: 50px;
+        color: var(--colorRojo);
+        
+    }
+    .aclaracion{
+        display: none;
+        text-align: center;
+        font-size: 20px ;
+    }
+    .aclaracionAbajo{
+        text-align: center;
+        margin-top: 60px;
+        font-size: 25px;
+        font-weight: 800;
+        font-family: var(--fuenteLetras);
+        color: var(--colorVioleta);
+    }
+    .botonContacto{
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(58, 119, 23);
+        transition: all 0.2s ease;
+        border: solid rgb(100, 202, 41) 3px;
+    }
+    .botonContacto a{
+        color: var(--colorBlanco);
+        font-size: 30px;
+    }
+    .botonContacto:hover{
+        background-color: rgb(100, 202, 41);
+        border-color: rgb(58, 119, 23);
+        transition: all 0.2s ease;
+    }
+
+    .clickea{
+        text-align: center;
+        font-size: 20px;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        color: grey;
+    }
+    .banner{
+        display: flex;
+        margin: auto;
+    
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 1000px;
+            height: 500px;
+        }
+    }
+}
+
+
+
+
+
+.listaProductos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+
+    .modal-container{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.507);
+        backdrop-filter: blur(7px);
+        
+        
+    }
+    .modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 95%;
+        background: var(--colorBlanco);
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        transition: transform 0.2s;
+        //transform: translateY(0%);
+        border: var(--colorNegro) solid 2px;
+        border-radius: 25px 0px 25px 0px;
+    }
+    .modal-cerrar{
+        //transform: translateY(-200%);
+        transition: all 0.2s ease;
+    }
+    .modal > img{
+        display: flex;
+        margin: auto;
+        height: 35%;
+        border: var(--colorNegro) solid 2px;
+        border-radius: 15px 0px 15px 0px;
+    }
+    .modal h2{
+        text-align: center;
+        font-family: var(--fuenteBotones);
+        color: var(--colorRojo);
+        text-shadow: 2px 2px rgba(128, 128, 128, 0.548);
+        font-size: 20px;
+    }
+    .modal-descripcion{
+        text-align: center;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        font-size: 15px;
+        width: 80%;
+    }
+    .modal-textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-textos h3{
+        font-size: 18px;
+    }
+    .modal-textos .beneficios{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 90%;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        
+    }
+    .cerrar{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 40px;
+        font-weight: 1000;
+        color: var(--colorRojo);
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    .cerrar:hover{
+        color: rgb(110, 9, 9);
+        transition: all 0.3s ease;
+    }
+    .comprar{
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 5px 5px;
+        color: var(--colorRojo);
+        font-family: var(--fuenteBotones);
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 0.5s ease;
+        margin-top: 20px;
+        border: solid var(--colorNegro) 1px;
+        border-radius: 10px;
+    }
+    .comprar:hover{
+        color: var(--colorVioleta);
+        transition: all 0.5s ease;
+    }
+
+    /*MODAL LATEX*/
+    .segundo-modal-container{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.507);
+        backdrop-filter: blur(7px);
+    }
+    .segundo-modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 95%;
+        background: var(--colorBlanco);
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        transition: transform 0.2s;
+        //transform: translateY(0%);
+        border: var(--colorNegro) solid 2px;
+        border-radius: 25px 0px 25px 0px;
+    }
+    .segundo-modal-cerrar{
+        //transform: translateY(-200%);
+        transition: all 0.2s ease;
+    }
+    .segundo-modal > img{
+        display: flex;
+        margin: auto;
+        height: 35%;
+        border: var(--colorNegro) solid 2px;
+        border-radius: 15px 0px 15px 0px;
+    }
+    .segundo-modal h2{
+        text-align: center;
+        font-family: var(--fuenteBotones);
+        color: var(--colorRojo);
+        text-shadow: 2px 2px rgba(128, 128, 128, 0.548);
+        font-size: 20px;
+    }
+    .segundo-modal-descripcion{
+        text-align: center;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        font-size: 15px;
+        width: 80%;
+    }
+    .segundo-modal-textos{
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .segundo-modal-textos h3{
+        font-size: 18px;
+    }
+    .segundo-modal-textos .beneficios{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        text-align: center;
+    }
+    .cerrar-dos{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 40px;
+        font-weight: 1000;
+        color: var(--colorRojo);
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    .cerrar-dos:hover{
+        color: rgb(110, 9, 9);
+        transition: all 0.3s ease;
+    }
+    .comprar{
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 5px 5px;
+        color: var(--colorRojo);
+        font-family: var(--fuenteBotones);
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 0.5s ease;
+        margin-top: 20px;
+        border: solid var(--colorNegro) 1px;
+        border-radius: 10px;
+    }
+    .comprar:hover{
+        color: var(--colorVioleta);
+        transition: all 0.5s ease;
+    }
+
+    /*MODAL FIJADOR*/
+    .tercer-modal-container{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.507);
+        backdrop-filter: blur(7px);
+    }
+    .tercer-modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 98%;
+        background: var(--colorBlanco);
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        transition: transform 0.2s;
+        //transform: translateY(0%);
+        border: var(--colorNegro) solid 2px;
+        border-radius: 25px 0px 25px 0px;
+    }
+    .tercer-modal-cerrar{
+        //transform: translateY(-200%);
+        transition: all 0.2s ease;
+    }
+    .tercer-modal > img{
+        display: flex;
+        margin: auto;
+        height: 30%;
+        border: var(--colorNegro) solid 2px;
+        border-radius: 15px 0px 15px 0px;
+    }
+    .tercer-modal h2{
+        text-align: center;
+        font-family: var(--fuenteBotones);
+        color: var(--colorRojo);
+        text-shadow: 2px 2px rgba(128, 128, 128, 0.548);
+        font-size: 28px;
+    }
+    .tercer-modal-descripcion{
+        text-align: center;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        font-size: 13px;
+        width: 80%;
+    }
+    .tercer-modal-textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+
+    }
+    .tercer-modal-textos h3{
+        font-size: 18px;
+    }
+ 
+    .tercer-modal-textos .beneficios{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    .cerrar-tres{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 40px;
+        font-weight: 1000;
+        color: var(--colorRojo);
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    .cerrar-tres:hover{
+        color: rgb(110, 9, 9);
+        transition: all 0.3s ease;
+    }
+    .comprar{
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 5px 5px;
+        color: var(--colorRojo);
+        font-family: var(--fuenteBotones);
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 0.5s ease;
+        margin-top: 20px;
+        border: solid var(--colorNegro) 1px;
+        border-radius: 10px;
+    }
+    .comprar:hover{
+        color: var(--colorVioleta);
+        transition: all 0.5s ease;
+    }
+    
+
+    /*Modal latex exterior*/
+    .cuarto-modal-container{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.507);
+        backdrop-filter: blur(7px);
+        
+        
+    }
+    .cuarto-modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 95%;
+        background: var(--colorBlanco);
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        transition: transform 0.2s;
+        //transform: translateY(0%);
+        border: var(--colorNegro) solid 2px;
+        border-radius: 25px 0px 25px 0px;
+    }
+    .cuarto-modal-cerrar{
+        //transform: translateY(-200%);
+        transition: all 0.2s ease;
+    }
+    .cuarto-modal > img{
+        display: flex;
+        margin: auto;
+        height: 35%;
+        border: var(--colorNegro) solid 2px;
+        border-radius: 15px 0px 15px 0px;
+    }
+    .cuarto-modal h2{
+        text-align: center;
+        font-family: var(--fuenteBotones);
+        color: var(--colorRojo);
+        text-shadow: 2px 2px rgba(128, 128, 128, 0.548);
+        font-size: 20px;
+    }
+    .cuarto-modal-descripcion{
+        text-align: center;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        font-size: 15px;
+        width: 80%;
+    }
+    .cuarto-modal-textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuarto-modal-textos h3{
+        font-size: 18px;
+    }
+    .cuarto-modal-textos .beneficios{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 90%;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        
+    }
+    .cerrar-cuatro{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 40px;
+        font-weight: 1000;
+        color: var(--colorRojo);
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    .cerrar-cuatro:hover{
+        color: rgb(110, 9, 9);
+        transition: all 0.3s ease;
+    }
+    .comprar-cuatro{
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 5px 5px;
+        color: var(--colorRojo);
+        font-family: var(--fuenteBotones);
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 0.5s ease;
+        margin-top: 20px;
+        border: solid var(--colorNegro) 1px;
+        border-radius: 10px;
+    }
+    .comprar-cuatro:hover{
+        color: var(--colorVioleta);
+        transition: all 0.5s ease;
+    }
+
+
+    /*Modal enduido exterior*/
+    .quinto-modal-container{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.507);
+        backdrop-filter: blur(7px);
+        
+        
+    }
+    .quinto-modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 95%;
+        background: var(--colorBlanco);
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        transition: transform 0.2s;
+        //transform: translateY(0%);
+        border: var(--colorNegro) solid 2px;
+        border-radius: 25px 0px 25px 0px;
+    }
+    .quinto-modal-cerrar{
+        //transform: translateY(-200%);
+        transition: all 0.2s ease;
+    }
+    .quinto-modal > img{
+        display: flex;
+        margin: auto;
+        height: 35%;
+        border: var(--colorNegro) solid 2px;
+        border-radius: 15px 0px 15px 0px;
+    }
+    .quinto-modal h2{
+        text-align: center;
+        font-family: var(--fuenteBotones);
+        color: var(--colorRojo);
+        text-shadow: 2px 2px rgba(128, 128, 128, 0.548);
+        font-size: 20px;
+    }
+    .quinto-modal-descripcion{
+        text-align: center;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        font-size: 15px;
+        width: 80%;
+    }
+    .quinto-modal-textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quinto-modal-textos h3{
+        font-size: 18px;
+    }
+    .quinto-modal-textos .beneficios{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 90%;
+        font-family: var(--fuenteLetras);
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        
+    }
+    .cerrar-cinco{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 40px;
+        font-weight: 1000;
+        color: var(--colorRojo);
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    .cerrar-cinco:hover{
+        color: rgb(110, 9, 9);
+        transition: all 0.3s ease;
+    }
+    .comprar-cinco{
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 5px 5px;
+        color: var(--colorRojo);
+        font-family: var(--fuenteBotones);
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 0.5s ease;
+        margin-top: 20px;
+        border: solid var(--colorNegro) 1px;
+        border-radius: 10px;
+    }
+    .comprar-cinco:hover{
+        color: var(--colorVioleta);
+        transition: all 0.5s ease;
+    }
+    
+}
+.productosCaja{
+    display: flex;
+    padding: 10px;
+    width: calc(100%/5 - 20px);
+    cursor: pointer;
+    transition: all 0.5s ease;
+   
+}
+.productosCaja:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+    
+}
+.productosCaja a{
+    text-decoration: none;
+}
+.producto{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 3px #ccc;
+    background-color: #fff;
+}
+.producto img{
+    width: 100%;
+    border-radius: 25px 0px 0px 25px;
+}
+.detalle-titulo{
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--colorRojo);
+    width: calc(100% - 10px);
+}
+.detalle-descripcion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--fuenteBotones);
+    font-size: 15px;
+    color: var(--colorVioleta);
+    padding: 5px; 
+    width: calc(100% - 10px);
+}
+
+
+
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    margin-top: 50px;
+
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+
+    .footUno{
+        text-align: center;
+
+        h3{
+            margin-top: 10px;
+            color: var(--colorBlanco);
+        }
+        a{
+            color: var(--colorBlanco);
+            padding-top: 10px;
+            transition: all 0.5s ease;
+        }
+        .iconowsp{
+            font-size: 30px;
+        }
+        .iconomsj{
+            font-size: 30px;
+        }
+        a:hover{
+            color: var(--colorRojo);
+            transition: all 0.5s ease;
+        }
+
+    }
+
+    .footDos{
+        text-align: center;
+        h3{
+            margin-top: 10px;
+            color: var(--colorBlanco);
+        }
+        a{  
+            display: block;
+            color: var(--colorBlanco);
+            padding-top: 10px;
+            transition: all 0.5s ease;
+        }
+        a:hover{
+            color: var(--colorRojo);
+            transition: all 0.5s ease;
+        }
+    }
+
+    .footTres{
+        text-align: center;
+        h3{
+            margin-top: 10px;
+            color: var(--colorBlanco);
+        }
+        a{  
+            display: block;
+            color: var(--colorBlanco);
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        .iconofb{
+            color: var(--colorBlanco);
+            transition: all 0.5s ease;
+        }
+        .iconofb:hover{
+            color: rgb(7, 7, 116);
+            transition: all 0.5s ease;
+        }
+        .iconoig{
+            color: var(--colorBlanco);
+            transition: all 0.5s ease;
+        }
+        .iconoig:hover{
+            color: rgb(192, 0, 192);
+            transition: all 0.5s ease;
+
+        }
+        
+
+    }
+    .direc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--fuenteLetras);
+        font-size: 12px;
+        font-weight: 900;
+        color: var(--colorBlanco);
+    }
+    #copy{
+        display: flex;
+        justify-content: center;
+        color: var(--colorBlanco);
+        font-size: 12px;
+    }
+}
